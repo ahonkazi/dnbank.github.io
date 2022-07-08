@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first bank application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+</head>
+
+<body>
+
+    <section id="login-area" class="show">
+        <h1 class="box-title text-center mt-4 text-warning-dark">Welcome to dnSoftBank</h1>
+
+        <div class="form-box mt-5">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <form class="login_form form">
+                        <div class="input-group">
+                            <input type="text" class="w-100" name="username" placeholder="Enter your email address here"
+                                id="email">
+                        </div>
+                        <div class="input-group">
+                            <input type="password" class="w-100" name="password" placeholder="Enter your password"
+                                id="password">
+                        </div>
+                        <div class="input-group">
+                            <button id="login-btn" type="submit">Login</button>
+                        </div>
+                        <!-- error -->
+                        <p class="text-danger hide login-err">Your login is incorrect</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dashboard" class="hide">
+        <h1 class="box-title text-center mt-4 text-warning-dark">dnSoftBank</h1>
+
+        <div class="card mt-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <div class="single-card bg-orange">
+                            <h3 class="card-name">Deposite</h3>
+                            <h1 class="balance"><span>$</span> <span class="diposite_ammount">00</span></h1>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="single-card bg-primary">
+                            <h3 class="card-name">Withdraw</h3>
+                            <h1 class="balance"><span>$</span> <span class="withdraw_ammount">00</span></h1>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="single-card bg-danger">
+                            <h3 class="card-name">Balance</h3>
+                            <h1 class="balance"><span>$</span> <span class="main_balance">100</span></h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="dashboard__control mt-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-5">
+                        <div class="single-form">
+                            <div class="form">
+                                <h2 class="text-primary">Deposite</h2>
+                                <div class="single__input-group mt-1">
+                                    <input id="deposite__ammount-input" type="text"
+                                        placeholder="Enter your deposite ammount" class="w-100">
+                                </div>
+                                <div class="single__input-group">
+                                    <button id="deposite" class="bg-orange">Deposite</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="single-form">
+                            <div class="form">
+                                <h2 class="text-primary">Withdraw</h2>
+
+                                <div class="single__input-group mt-1">
+                                    <input id="withdraw__ammount-input" type="text"
+                                        placeholder="Enter your withdraw ammount" class="w-100">
+                                </div>
+                                <div class="single__input-group">
+                                    <button id="withdraw" class="bg-danger">Withdraw</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
